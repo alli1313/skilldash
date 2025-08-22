@@ -1,4 +1,4 @@
-// SkillDash v2.1 Hotfix — trust skin + wallet + fixed final round + cache bust
+// Option B build — light skin + same game rules (wallet + tiers + no jackpot replay)
 const views = {
   home: document.getElementById('view-home'),
   game: document.getElementById('view-game'),
@@ -46,12 +46,12 @@ let entriesTodayKey = 'entries-' + todayKey();
 
 const CONFIG = {
   FREE_PER_DAY: 1,
-  ENTRY_SCHEDULE: [0,100,500,1000,2000],
-  EARLY_REWARD: 100,
-  MID_REWARD: 500,
-  FINAL_REWARD: 10000,
-  EARLY_CONT_COSTS: [100,200,500],
-  MID_CONT_COSTS: [500,1000,1500],
+  ENTRY_SCHEDULE: [0,100,500,1000,2000], // $0, $1, $5, $10, $20
+  EARLY_REWARD: 100, // $1
+  MID_REWARD: 500,   // $5
+  FINAL_REWARD: 10000, // $100
+  EARLY_CONT_COSTS: [100,200,500], // $1,$2,$5 then out
+  MID_CONT_COSTS: [500,1000,1500], // $5,$10,$15 then out
   TIME_PER_Q: 5
 };
 
@@ -94,7 +94,7 @@ function entryCostForNextGame(){
 }
 
 async function startGame(){
-  questions = await loadQuestions(); // 11 questions now (10+final)
+  questions = await loadQuestions(); // 11 questions (10 + final)
   currentIndex = 0;
   earlyMisses = 0;
   midMisses = 0;
@@ -109,10 +109,10 @@ function showView(which){
 }
 
 async function loadQuestions(){
-  const res = await fetch('questions.json?v=v2.1-hotfix');
+  const res = await fetch('questions.json?v=v3.0-optionB');
   const data = await res.json();
   const arr = data.slice().sort(()=> Math.random()-0.5);
-  return arr.slice(0,11); // 11th is the final
+  return arr.slice(0,11);
 }
 
 function tierForIndex(i){
@@ -137,9 +137,8 @@ function renderQuestion(){
   const isFinal = (currentIndex===10);
   const q = questions[currentIndex];
   questionText.textContent = isFinal ? 'Final challenge: answer correctly to win $100.' : q.q;
-  const opts = q.choices;
   optionsEl.innerHTML='';
-  opts.forEach((choice, idx)=>{
+  q.choices.forEach((choice, idx)=>{
     const b=document.createElement('button');
     b.className='option-btn'; b.type='button'; b.setAttribute('aria-pressed','false'); b.textContent=choice;
     b.addEventListener('click', ()=> handleAnswer(idx, b), { passive:true });
@@ -176,8 +175,7 @@ function resolveAnswer(selectedIdx){
   const correct = (selectedIdx===correctIdx);
   if (correct){
     if (isFinal){ addCents('winnings', CONFIG.FINAL_REWARD); updateBalances(); endGame(true); return; }
-    if (currentIndex<5) addCents('winnings', CONFIG.EARLY_REWARD);
-    else addCents('winnings', CONFIG.MID_REWARD);
+    if (currentIndex<5) addCents('winnings', CONFIG.EARLY_REWARD); else addCents('winnings', CONFIG.MID_REWARD);
     updateBalances();
     setTimeout(nextQuestion,700);
   } else {
@@ -227,4 +225,3 @@ backHomeBtn?.addEventListener('click', ()=> showView('home'));
 
 // boot
 updateBalances();
-console.log('Loaded v2.1-hotfix');

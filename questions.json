@@ -110,50 +110,6 @@
     "answerIndex": 1
   },
   {
-    "q": "Which language has the most native speakers worldwide?",
-    "choices": [
-      "English",
-      "Spanish",
-      "Mandarin Chinese",
-      "Hindi",
-      "Arabic"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "q": "Which city hosted the 2016 Summer Olympics?",
-    "choices": [
-      "Tokyo",
-      "London",
-      "Rio de Janeiro",
-      "Beijing",
-      "Athens"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "q": "What is the hardest natural substance?",
-    "choices": [
-      "Diamond",
-      "Graphite",
-      "Corundum",
-      "Quartz",
-      "Topaz"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "q": "E = mc\u00b2 was proposed by which physicist?",
-    "choices": [
-      "Isaac Newton",
-      "Albert Einstein",
-      "Niels Bohr",
-      "Max Planck",
-      "Galileo Galilei"
-    ],
-    "answerIndex": 1
-  },
-  {
     "q": "Which metal is liquid at room temperature?",
     "choices": [
       "Mercury",

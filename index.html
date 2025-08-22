@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=v2.1-hotfix" />
+  <meta name="theme-color" content="#0c1533">
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -30,7 +31,9 @@
         <div class="hero-card">
           <div class="sticker">TRIVIA • 100% SKILL</div>
           <h1 id="hero-title">Win a $25 Visa e‑gift when you score 8/10</h1>
-          <p class="sub">Skill‑based • No purchase necessary • Secure prizes via <img src="assets/provider.svg" alt="Tremendous" class="provider"></p>
+          <p class="sub">Skill‑based • No purchase necessary • Secure prizes via 
+            <img src="assets/provider.svg" alt="Tremendous" class="provider" onerror="this.replaceWith(document.createTextNode('Tremendous'))">
+          </p>
           <div class="cta-row">
             <a class="cta-btn" id="playBtn" href="#">PLAY FREE</a>
             <button class="ghost-btn" id="manageWallet">Manage Wallet</button>
@@ -45,6 +48,7 @@
             <div>Winnings: <strong id="winBal">$0.00</strong></div>
             <div>Today’s entries: <strong id="entriesToday">0</strong></div>
           </div>
+          <div class="tiny ver">Build v2.1-hotfix</div>
         </div>
       </div>
     </section>
@@ -70,7 +74,7 @@
           <strong id="game-title">Trivia Dash</strong>
         </div>
         <div class="tb-right">
-          <span class="chip" id="roundInfo">Q 1/10</span>
+          <span class="chip" id="roundInfo">Q 1/11</span>
           <span class="chip">Target: 8/10</span>
           <span class="timer chip"><span id="timer">00:05</span></span>
         </div>
@@ -105,7 +109,7 @@
         <a class="cta-btn" id="playAgainBtn" href="#">Play Again</a>
         <button class="ghost-btn" id="backHomeBtn">Home</button>
       </div>
-      <p class="note">Payouts are demo-only. In production, scores are server‑verified before prize delivery.</p>
+      <p class="note">Demo only. In production, scores are server‑verified before prize delivery.</p>
     </section>
   </main>
 
@@ -143,6 +147,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=v2.1-hotfix"></script>
 </body>
 </html>

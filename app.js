@@ -179,8 +179,18 @@ submitBtn.addEventListener('click', () => {
     btn.disabled = true;
   });
   if (selectedIndex === correctIdx) score++;
-  nextBtn.disabled = false;
   progressBar.style.width = `${(currentIndex+1)/TOTAL_QUESTIONS*100}%`;
+
+  // ✅ Automatically advance to next question after a short pause
+  setTimeout(() => {
+    if (currentIndex < TOTAL_QUESTIONS - 1) {
+      currentIndex++;
+      renderHUD();
+      renderQuestion();
+    } else {
+      endGame();
+    }
+  }, 1000); // 1 second delay so players see the correct answer highlight
 });
 
 nextBtn.addEventListener('click', () => {

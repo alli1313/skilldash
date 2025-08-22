@@ -1,0 +1,167 @@
+[
+  {
+    "q": "Which planet is known as the 'Red Planet'?",
+    "choices": [
+      "Jupiter",
+      "Mars",
+      "Venus",
+      "Saturn",
+      "Mercury"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "Who painted the ceiling of the Sistine Chapel?",
+    "choices": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Donatello",
+      "Michelangelo",
+      "Botticelli"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "q": "What is the capital city of Canada?",
+    "choices": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Ottawa",
+      "Calgary"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "q": "In what year did the Titanic sink?",
+    "choices": [
+      "1910",
+      "1912",
+      "1915",
+      "1918",
+      "1920"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "Which gas do plants primarily absorb from the atmosphere for photosynthesis?",
+    "choices": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Hydrogen",
+      "Helium"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "q": "Who was the first woman to win a Nobel Prize?",
+    "choices": [
+      "Rosalind Franklin",
+      "Marie Curie",
+      "Ada Lovelace",
+      "Florence Nightingale",
+      "Barbara McClintock"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "Which country gifted the Statue of Liberty to the United States?",
+    "choices": [
+      "England",
+      "Spain",
+      "Italy",
+      "France",
+      "Germany"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "q": "What is the smallest prime number?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "q": "Who wrote 'Romeo and Juliet'?",
+    "choices": [
+      "Geoffrey Chaucer",
+      "William Shakespeare",
+      "John Milton",
+      "Charles Dickens",
+      "Jane Austen"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "Which element has the chemical symbol 'Au'?",
+    "choices": [
+      "Silver",
+      "Gold",
+      "Copper",
+      "Aluminum",
+      "Argon"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "What is the largest ocean on Earth?",
+    "choices": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Southern Ocean"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "q": "Which language has the most native speakers worldwide?",
+    "choices": [
+      "English",
+      "Spanish",
+      "Mandarin Chinese",
+      "Hindi",
+      "Arabic"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "q": "Which city hosted the 2016 Summer Olympics?",
+    "choices": [
+      "Tokyo",
+      "London",
+      "Rio de Janeiro",
+      "Beijing",
+      "Athens"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "q": "What is the hardest natural substance?",
+    "choices": [
+      "Diamond",
+      "Graphite",
+      "Corundum",
+      "Quartz",
+      "Topaz"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "q": "E = mc\u00b2 was proposed by which physicist?",
+    "choices": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Niels Bohr",
+      "Max Planck",
+      "Galileo Galilei"
+    ],
+    "answerIndex": 1
+  }
+]

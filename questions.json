@@ -55,17 +55,6 @@
     "answerIndex": 2
   },
   {
-    "q": "Who was the first woman to win a Nobel Prize?",
-    "choices": [
-      "Rosalind Franklin",
-      "Marie Curie",
-      "Ada Lovelace",
-      "Florence Nightingale",
-      "Barbara McClintock"
-    ],
-    "answerIndex": 1
-  },
-  {
     "q": "Which country gifted the Statue of Liberty to the United States?",
     "choices": [
       "England",
@@ -163,5 +152,16 @@
       "Galileo Galilei"
     ],
     "answerIndex": 1
+  },
+  {
+    "q": "Which metal is liquid at room temperature?",
+    "choices": [
+      "Mercury",
+      "Gallium",
+      "Sodium",
+      "Cesium",
+      "Bromine"
+    ],
+    "answerIndex": 0
   }
 ]

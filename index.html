@@ -3,167 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SkillDash — Mobile Trivia Demo</title>
+  <title>SkillDash — Play Skill Trivia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <button class="link-btn nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">☰</button>
       <div class="brand">
-        <img src="assets/logo.svg" alt="" class="logo" />
+        <img src="assets/skilldash-icon.svg" alt="" class="logo" />
         <span class="brand-name">SkillDash</span>
       </div>
-      <nav class="nav" id="siteNav" aria-label="Primary">
-        <button class="link-btn" id="openRulesBtn" aria-haspopup="dialog" aria-controls="rulesDialog">Rules</button>
+      <nav class="nav">
+        <button class="link-btn" id="openWallet">Wallet</button>
+        <button class="link-btn" id="openRules">Rules</button>
         <a class="link" href="#faq">FAQ</a>
-        <a class="cta-btn" id="playFromHeader" href="#">Play Free</a>
       </nav>
     </div>
   </header>
 
   <main id="view-home" class="view active" aria-labelledby="hero-title">
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title">Test your skill. Win a gift card.</h1>
-          <p>Short, fair, skill-based trivia built for phones. One free play a day. Beat the target score to (hypothetically) receive a digital Visa gift card.</p>
-          <div class="hero-actions">
-            <a class="cta-btn cta-primary" id="playBtn" href="#">Play Free</a>
-            <button class="ghost-btn" id="openRulesBtn2" aria-haspopup="dialog" aria-controls="rulesDialog">See Rules</button>
+      <div class="container">
+        <div class="hero-card">
+          <div class="sticker">TRIVIA • 100% SKILL</div>
+          <h1 id="hero-title">Win a $25 Visa e‑gift when you score 8/10</h1>
+          <p class="sub">Skill‑based • No purchase necessary • Secure prizes via <img src="assets/provider.svg" alt="Tremendous" class="provider"></p>
+          <div class="cta-row">
+            <a class="cta-btn" id="playBtn" href="#">PLAY FREE</a>
+            <button class="ghost-btn" id="manageWallet">Manage Wallet</button>
           </div>
-          <ul class="badges" role="list">
-            <li>Mobile‑first</li>
-            <li>Skill‑based</li>
-            <li>No Purchase Necessary</li>
-          </ul>
+          <div class="pill-row">
+            <span class="pill">Mobile‑first</span>
+            <span class="pill">No RNG</span>
+            <span class="pill">One free play daily</span>
+          </div>
+          <div class="balances">
+            <div>Wallet: <strong id="walletBal">$0.00</strong></div>
+            <div>Winnings: <strong id="winBal">$0.00</strong></div>
+            <div>Today’s entries: <strong id="entriesToday">0</strong></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="preview container" aria-hidden="true">
-      <div class="phone-frame">
-        <div class="demo-top">
-          <span class="chip">Trivia Dash</span>
-          <span class="timer">00:15</span>
-        </div>
-        <div class="demo-q">Which element has the symbol “Au”?</div>
-        <div class="demo-options">
-          <span class="opt">A) Silver</span>
-          <span class="opt opt-correct">B) Gold</span>
-          <span class="opt">C) Copper</span>
-          <span class="opt">D) Aluminum</span>
-          <span class="opt">E) Argon</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Your free play is waiting.</h2>
-        <a class="cta-btn cta-primary" id="playBtn2" href="#">Start Now</a>
-      </div>
-    </section>
-
-    <section id="faq" class="faq">
-      <div class="container">
-        <h2>FAQ</h2>
-        <details>
-          <summary>Is this gambling?</summary>
-          <p>No. Outcomes depend solely on your skill. We also provide a free entry route (“No Purchase Necessary”). Prizes are digital gift cards (merchandise), not cash.</p>
-        </details>
-        <details>
-          <summary>How do I win?</summary>
-          <p>Beat the posted target (for the demo: score at least 8/10 within the time limit). Targets may vary by challenge.</p>
-        </details>
-        <details>
-          <summary>How are prizes delivered?</summary>
-          <p>Winners receive a digital gift card via email. Delivery is typically within minutes, but can take up to 72 hours during manual verification.</p>
-        </details>
-      </div>
+    <section id="faq" class="faq container">
+      <h2>How it works</h2>
+      <ol class="howto">
+        <li>Answer 10 questions. Rounds 1–5 pay <strong>$1</strong> per correct answer.</li>
+        <li>Rounds 6–10 pay <strong>$5</strong> per correct answer.</li>
+        <li>Beat both tiers to face the final for <strong>$100</strong> (one shot).</li>
+        <li>Missed one? Continue using winnings or wallet. Costs escalate by tier.</li>
+        <li>First game each day is free. Later games today: $1 → $5 → $10 → $20.</li>
+      </ol>
     </section>
   </main>
 
   <!-- GAME VIEW -->
-  <main id="view-game" class="view" aria-labelledby="game-title" hidden>
+  <main id="view-game" class="view" hidden aria-labelledby="game-title">
     <section class="game container">
-      <div class="game-header">
-        <h2 id="game-title">Trivia Dash — Demo</h2>
-        <div class="game-meta">
-          <span id="freePlaysBadge" class="chip"></span>
+      <div class="titlebar">
+        <div class="tb-left">
+          <img src="assets/skilldash-icon.svg" alt="" class="tiny">
+          <strong id="game-title">Trivia Dash</strong>
+        </div>
+        <div class="tb-right">
           <span class="chip" id="roundInfo">Q 1/10</span>
           <span class="chip">Target: 8/10</span>
-          <span class="chip" id="timer" aria-live="polite">01:30</span>
+          <span class="timer chip"><span id="timer">00:05</span></span>
         </div>
       </div>
 
-      <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+      <div class="status-row">
+        <span class="chip" id="tierChip">Tier 1 ($1/Q)</span>
+        <span class="chip">Wallet: <span id="walletBalGame">$0.00</span></span>
+        <span class="chip">Winnings: <span id="winBalGame">$0.00</span></span>
+      </div>
 
-      <div class="card question-card">
-        <div id="questionText" class="question-text"></div>
+      <div class="progress"><div id="progressBar"></div></div>
+
+      <div class="card">
+        <div id="questionText" class="question"></div>
         <div id="options" class="options" role="group" aria-label="Answer choices"></div>
       </div>
 
       <div class="game-actions">
-        <button id="submitBtn" class="cta-btn" disabled>Submit</button>
-        <button id="nextBtn" class="ghost-btn" disabled>Next</button>
         <button id="quitBtn" class="link-btn">Quit</button>
       </div>
     </section>
   </main>
 
   <!-- RESULT VIEW -->
-  <main id="view-result" class="view" aria-labelledby="result-title" hidden>
+  <main id="view-result" class="view" hidden aria-labelledby="result-title">
     <section class="result container">
-      <h2 id="result-title">Round complete</h2>
+      <div class="sticker big">ROUND COMPLETE</div>
+      <h2 id="result-title">Nice work!</h2>
       <p id="resultSummary"></p>
       <div class="result-actions">
-        <a class="cta-btn cta-primary" id="playAgainBtn" href="#">Play Again</a>
-        <button class="ghost-btn" id="backHomeBtn">Back to Home</button>
+        <a class="cta-btn" id="playAgainBtn" href="#">Play Again</a>
+        <button class="ghost-btn" id="backHomeBtn">Home</button>
       </div>
-
-      <form id="prizeForm" class="card prize-form" hidden novalidate>
-        <h3>Claim your prize</h3>
-        <p>You beat the target — nicely done! Enter your email to (hypothetically) receive your digital gift card in this demo.</p>
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="you@example.com" required inputmode="email"/>
-        <button class="cta-btn" id="claimBtn" type="button">Claim Prize</button>
-        <p class="note">This prototype does not send real emails. In production, we’d integrate with a gift-card provider after server-side score verification.</p>
-      </form>
+      <p class="note">Payouts are demo-only. In production, scores are server‑verified before prize delivery.</p>
     </section>
   </main>
 
-  <!-- RULES DIALOG -->
-  <dialog id="rulesDialog" class="rules-dialog" aria-labelledby="rulesTitle">
+  <!-- DIALOGS -->
+  <dialog id="rulesDialog" class="dialog">
     <form method="dialog">
-      <h2 id="rulesTitle">Official Contest Rules (Demo)</h2>
-      <ol class="rules-list">
-        <li><strong>Eligibility:</strong> U.S. residents, 18+. Void where prohibited.</li>
-        <li><strong>How to Enter:</strong> One free play per day. Additional paid attempts may be offered in production. No purchase necessary.</li>
-        <li><strong>Game Description:</strong> Skill-based challenge (e.g., score ≥ 8/10 correct within time limit). No random drawings.</li>
-        <li><strong>Prizes:</strong> Digital gift cards delivered by email. No cash alternative.</li>
-        <li><strong>Winners:</strong> Determined solely by skill; subject to verification and anti-fraud checks.</li>
-        <li><strong>Taxes:</strong> Prizes ≥ $600/year may require IRS reporting. Winners are responsible for taxes.</li>
-        <li><strong>General:</strong> Organizer may modify, suspend, or terminate the contest if technical/legal issues arise. All decisions final.</li>
-      </ol>
-      <div class="dialog-actions">
-        <button class="cta-btn">Close</button>
-      </div>
+      <h3>Official Rules (Demo)</h3>
+      <ul class="rules">
+        <li>Skill‑based contest; no random outcomes.</li>
+        <li>One free entry per day; additional entries require wallet funds.</li>
+        <li>Payouts: R1–5 $1 each, R6–10 $5 each, Final $100 (one shot).</li>
+        <li>Continue costs: Tier1 ($1, $2, $5 then out). Tier2 ($5, $10, $15 then out).</li>
+        <li>Wallet top‑ups in $10+ increments. Winnings can be used for continues.</li>
+        <li>No jackpot replays. Winners subject to verification.</li>
+      </ul>
+      <div class="dialog-actions"><button class="cta-btn">Close</button></div>
     </form>
   </dialog>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> SkillDash</div>
-      <nav class="footer-nav">
-        <button class="link-btn" id="openRulesBtn3" aria-haspopup="dialog" aria-controls="rulesDialog">Rules</button>
-        <a class="link" href="#faq">FAQ</a>
-      </nav>
-    </div>
-  </footer>
+  <dialog id="walletDialog" class="dialog">
+    <form method="dialog" id="walletForm">
+      <h3>Wallet</h3>
+      <p>Use your wallet for entries and continues. Top up in $10 increments.</p>
+      <div class="wallet-balances">
+        <div>Wallet: <strong id="walletBalD">$0.00</strong></div>
+        <div>Winnings: <strong id="winBalD">$0.00</strong></div>
+      </div>
+      <div class="topups">
+        <button class="topup" data-amt="10" value="close">$10 Top‑Up</button>
+        <button class="topup" data-amt="20" value="close">$20 Top‑Up</button>
+        <button class="topup" data-amt="50" value="close">$50 Top‑Up</button>
+      </div>
+      <p class="tiny">Demo only: top‑ups simulate a payment. In production, use Apple Pay/Stripe wallet.</p>
+      <div class="dialog-actions"><button class="ghost-btn">Close</button></div>
+    </form>
+  </dialog>
 
   <script type="module" src="app.js"></script>
 </body>

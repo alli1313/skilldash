@@ -8,116 +8,1195 @@
       "Saturn",
       "Mercury"
     ],
-    "answerIndex": 1
+    "answerIndex": 1,
+    "difficulty": "easy"
   },
   {
-    "q": "Who painted the ceiling of the Sistine Chapel?",
+    "q": "How many continents are there?",
     "choices": [
-      "Leonardo da Vinci",
-      "Raphael",
-      "Donatello",
-      "Michelangelo",
-      "Botticelli"
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
     ],
-    "answerIndex": 3
+    "answerIndex": 2,
+    "difficulty": "easy"
   },
   {
-    "q": "What is the capital city of Canada?",
+    "q": "A triangle\u2019s angles add up to how many degrees?",
     "choices": [
-      "Toronto",
-      "Vancouver",
-      "Montreal",
-      "Ottawa",
-      "Calgary"
+      "90",
+      "120",
+      "180",
+      "270",
+      "360"
     ],
-    "answerIndex": 3
+    "answerIndex": 2,
+    "difficulty": "easy"
   },
   {
-    "q": "In what year did the Titanic sink?",
-    "choices": [
-      "1910",
-      "1912",
-      "1915",
-      "1918",
-      "1920"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "q": "Which gas do plants primarily absorb from the atmosphere for photosynthesis?",
+    "q": "What is H2O commonly called?",
     "choices": [
       "Oxygen",
-      "Nitrogen",
-      "Carbon Dioxide",
       "Hydrogen",
-      "Helium"
+      "Salt",
+      "Water",
+      "Steam"
     ],
-    "answerIndex": 2
+    "answerIndex": 3,
+    "difficulty": "easy"
   },
   {
-    "q": "Which country gifted the Statue of Liberty to the United States?",
+    "q": "Which color results from mixing red and blue?",
     "choices": [
-      "England",
-      "Spain",
-      "Italy",
-      "France",
-      "Germany"
+      "Green",
+      "Purple",
+      "Orange",
+      "Pink",
+      "Brown"
     ],
-    "answerIndex": 3
+    "answerIndex": 1,
+    "difficulty": "easy"
   },
   {
-    "q": "What is the smallest prime number?",
+    "q": "What is the capital of Japan?",
     "choices": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "5"
+      "Osaka",
+      "Kyoto",
+      "Tokyo",
+      "Sapporo",
+      "Nagoya"
     ],
-    "answerIndex": 2
-  },
-  {
-    "q": "Who wrote 'Romeo and Juliet'?",
-    "choices": [
-      "Geoffrey Chaucer",
-      "William Shakespeare",
-      "John Milton",
-      "Charles Dickens",
-      "Jane Austen"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "q": "Which element has the chemical symbol 'Au'?",
-    "choices": [
-      "Silver",
-      "Gold",
-      "Copper",
-      "Aluminum",
-      "Argon"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "q": "What is the largest ocean on Earth?",
-    "choices": [
-      "Atlantic Ocean",
-      "Pacific Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Southern Ocean"
-    ],
-    "answerIndex": 1
+    "answerIndex": 2,
+    "difficulty": "easy"
   },
   {
     "q": "Which metal is liquid at room temperature?",
     "choices": [
       "Mercury",
-      "Gallium",
-      "Sodium",
-      "Cesium",
-      "Bromine"
+      "Gold",
+      "Iron",
+      "Aluminum",
+      "Copper"
     ],
-    "answerIndex": 0
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which ocean is largest by area?",
+    "choices": [
+      "Atlantic",
+      "Pacific",
+      "Indian",
+      "Arctic",
+      "Southern"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which number is even?",
+    "choices": [
+      "11",
+      "13",
+      "15",
+      "18",
+      "21"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which instrument has keys, pedals, and strings?",
+    "choices": [
+      "Violin",
+      "Flute",
+      "Piano",
+      "Drum",
+      "Harp"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which gas do plants absorb during photosynthesis?",
+    "choices": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Helium",
+      "Hydrogen"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Who painted the ceiling of the Sistine Chapel?",
+    "choices": [
+      "Da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Donatello",
+      "Botticelli"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "The Great Barrier Reef sits off which country?",
+    "choices": [
+      "USA",
+      "Australia",
+      "Brazil",
+      "India",
+      "South Africa"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Na is the chemical symbol for:",
+    "choices": [
+      "Sodium",
+      "Neon",
+      "Nickel",
+      "Nitrogen",
+      "Niobium"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Prime number:",
+    "choices": [
+      "21",
+      "33",
+      "37",
+      "49",
+      "51"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "What does CPU stand for?",
+    "choices": [
+      "Central Processing Unit",
+      "Computer Power Unit",
+      "Core Processing Utility",
+      "Central Process Unit",
+      "Compute Performance Unit"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which language has the most native speakers?",
+    "choices": [
+      "English",
+      "Spanish",
+      "Mandarin Chinese",
+      "Hindi",
+      "Arabic"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Largest planet in our solar system?",
+    "choices": [
+      "Earth",
+      "Jupiter",
+      "Saturn",
+      "Neptune",
+      "Uranus"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Author of 'Romeo and Juliet'?",
+    "choices": [
+      "Shakespeare",
+      "Chaucer",
+      "Milton",
+      "Dickens",
+      "Austen"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which element has symbol 'Au'?",
+    "choices": [
+      "Silver",
+      "Gold",
+      "Copper",
+      "Argon",
+      "Aluminum"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which city hosted the first modern Olympics (1896)?",
+    "choices": [
+      "Paris",
+      "Athens",
+      "London",
+      "Rome",
+      "Stockholm"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is the smallest bone in the human body?",
+    "choices": [
+      "Stapes",
+      "Ulna",
+      "Fibula",
+      "Scaphoid",
+      "Malleus"
+    ],
+    "answerIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "q": "The Richter scale measures what?",
+    "choices": [
+      "Wind speed",
+      "Earthquake magnitude",
+      "Pressure",
+      "Radiation",
+      "Temperature"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which vitamin is also known as ascorbic acid?",
+    "choices": [
+      "A",
+      "B12",
+      "C",
+      "D",
+      "K"
+    ],
+    "answerIndex": 2,
+    "difficulty": "hard"
+  },
+  {
+    "q": "Who discovered penicillin?",
+    "choices": [
+      "Marie Curie",
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Edward Jenner",
+      "Robert Koch"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is the powerhouse of the cell?",
+    "choices": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "Who developed the theory of general relativity?",
+    "choices": [
+      "Newton",
+      "Einstein",
+      "Maxwell",
+      "Bohr",
+      "Planck"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which country has the city of Timbuktu?",
+    "choices": [
+      "Ethiopia",
+      "Mali",
+      "Sudan",
+      "Niger",
+      "Ghana"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "Which gas is most abundant in Earth\u2019s atmosphere?",
+    "choices": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Argon",
+      "Neon"
+    ],
+    "answerIndex": 1,
+    "difficulty": "hard"
+  },
+  {
+    "q": "In computing, what does 'HTTP' stand for?",
+    "choices": [
+      "HyperText Transfer Protocol",
+      "High Transfer Text Protocol",
+      "Hyperlink Transfer Program",
+      "Host Transfer Protocol",
+      "HyperText Transmission Program"
+    ],
+    "answerIndex": 0,
+    "difficulty": "hard"
+  },
+  {
+    "q": "What is 22 + 33?",
+    "choices": [
+      "53",
+      "57",
+      "50",
+      "55",
+      "60"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 37 + 19?",
+    "choices": [
+      "54",
+      "56",
+      "51",
+      "58",
+      "61"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 22 + 29?",
+    "choices": [
+      "51",
+      "56",
+      "53",
+      "49",
+      "46"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 42 + 40?",
+    "choices": [
+      "84",
+      "82",
+      "87",
+      "80",
+      "77"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 34 + 36?",
+    "choices": [
+      "72",
+      "75",
+      "65",
+      "68",
+      "70"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 36 + 36?",
+    "choices": [
+      "72",
+      "70",
+      "67",
+      "77",
+      "74"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 24 + 33?",
+    "choices": [
+      "62",
+      "57",
+      "59",
+      "52",
+      "55"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 38 + 39?",
+    "choices": [
+      "82",
+      "77",
+      "72",
+      "79",
+      "75"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 42 + 24?",
+    "choices": [
+      "61",
+      "71",
+      "64",
+      "68",
+      "66"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 30 + 17?",
+    "choices": [
+      "52",
+      "45",
+      "42",
+      "49",
+      "47"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 18 + 20?",
+    "choices": [
+      "40",
+      "36",
+      "38",
+      "33",
+      "43"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 45 + 47?",
+    "choices": [
+      "90",
+      "92",
+      "87",
+      "97",
+      "94"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 20 + 22?",
+    "choices": [
+      "40",
+      "37",
+      "47",
+      "42",
+      "44"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 13 + 32?",
+    "choices": [
+      "50",
+      "47",
+      "45",
+      "40",
+      "43"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 31 + 45?",
+    "choices": [
+      "74",
+      "76",
+      "71",
+      "81",
+      "78"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 46 + 14?",
+    "choices": [
+      "62",
+      "60",
+      "58",
+      "55",
+      "65"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 21 + 15?",
+    "choices": [
+      "38",
+      "36",
+      "34",
+      "31",
+      "41"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 20 + 24?",
+    "choices": [
+      "39",
+      "42",
+      "44",
+      "46",
+      "49"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 48 + 40?",
+    "choices": [
+      "88",
+      "86",
+      "93",
+      "90",
+      "83"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 46 + 47?",
+    "choices": [
+      "88",
+      "93",
+      "91",
+      "98",
+      "95"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 19 + 12?",
+    "choices": [
+      "31",
+      "36",
+      "33",
+      "26",
+      "29"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 19 + 47?",
+    "choices": [
+      "64",
+      "66",
+      "71",
+      "61",
+      "68"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 23 + 42?",
+    "choices": [
+      "63",
+      "65",
+      "67",
+      "60",
+      "70"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 21 + 24?",
+    "choices": [
+      "40",
+      "50",
+      "47",
+      "43",
+      "45"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 47 + 42?",
+    "choices": [
+      "84",
+      "89",
+      "87",
+      "94",
+      "91"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 19 + 12?",
+    "choices": [
+      "33",
+      "26",
+      "31",
+      "36",
+      "29"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 40 + 20?",
+    "choices": [
+      "65",
+      "60",
+      "55",
+      "62",
+      "58"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 31 + 42?",
+    "choices": [
+      "73",
+      "71",
+      "75",
+      "68",
+      "78"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 24 + 37?",
+    "choices": [
+      "61",
+      "56",
+      "59",
+      "63",
+      "66"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 18 + 26?",
+    "choices": [
+      "44",
+      "49",
+      "39",
+      "42",
+      "46"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 43 + 41?",
+    "choices": [
+      "86",
+      "89",
+      "82",
+      "79",
+      "84"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 45 + 13?",
+    "choices": [
+      "63",
+      "53",
+      "58",
+      "60",
+      "56"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 43 + 29?",
+    "choices": [
+      "67",
+      "74",
+      "77",
+      "72",
+      "70"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 43 + 13?",
+    "choices": [
+      "56",
+      "58",
+      "61",
+      "51",
+      "54"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 26 + 28?",
+    "choices": [
+      "59",
+      "49",
+      "52",
+      "56",
+      "54"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 41 + 19?",
+    "choices": [
+      "58",
+      "62",
+      "55",
+      "65",
+      "60"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 41 + 25?",
+    "choices": [
+      "61",
+      "71",
+      "66",
+      "64",
+      "68"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 27 + 16?",
+    "choices": [
+      "41",
+      "45",
+      "43",
+      "38",
+      "48"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 34 + 13?",
+    "choices": [
+      "52",
+      "49",
+      "45",
+      "47",
+      "42"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 29 + 12?",
+    "choices": [
+      "39",
+      "36",
+      "41",
+      "46",
+      "43"
+    ],
+    "answerIndex": 2,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 41 + 31?",
+    "choices": [
+      "72",
+      "74",
+      "67",
+      "70",
+      "77"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 13 + 29?",
+    "choices": [
+      "44",
+      "42",
+      "40",
+      "37",
+      "47"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 48 + 22?",
+    "choices": [
+      "75",
+      "72",
+      "65",
+      "68",
+      "70"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 12 + 28?",
+    "choices": [
+      "40",
+      "42",
+      "35",
+      "45",
+      "38"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 31 + 14?",
+    "choices": [
+      "50",
+      "47",
+      "40",
+      "43",
+      "45"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 22 + 44?",
+    "choices": [
+      "66",
+      "64",
+      "71",
+      "68",
+      "61"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 30 + 38?",
+    "choices": [
+      "68",
+      "73",
+      "66",
+      "70",
+      "63"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 37 + 48?",
+    "choices": [
+      "80",
+      "90",
+      "87",
+      "85",
+      "83"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 20 + 30?",
+    "choices": [
+      "45",
+      "50",
+      "52",
+      "55",
+      "48"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 25 + 26?",
+    "choices": [
+      "46",
+      "53",
+      "56",
+      "49",
+      "51"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 28 + 40?",
+    "choices": [
+      "70",
+      "73",
+      "63",
+      "68",
+      "66"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 23 + 20?",
+    "choices": [
+      "48",
+      "43",
+      "45",
+      "38",
+      "41"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 32 + 36?",
+    "choices": [
+      "73",
+      "70",
+      "63",
+      "68",
+      "66"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 15 + 14?",
+    "choices": [
+      "34",
+      "24",
+      "31",
+      "29",
+      "27"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 34 + 25?",
+    "choices": [
+      "57",
+      "64",
+      "54",
+      "59",
+      "61"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 27 + 40?",
+    "choices": [
+      "62",
+      "65",
+      "72",
+      "67",
+      "69"
+    ],
+    "answerIndex": 3,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 35 + 26?",
+    "choices": [
+      "59",
+      "63",
+      "66",
+      "56",
+      "61"
+    ],
+    "answerIndex": 4,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 15 + 13?",
+    "choices": [
+      "28",
+      "26",
+      "33",
+      "23",
+      "30"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 33 + 35?",
+    "choices": [
+      "66",
+      "68",
+      "63",
+      "70",
+      "73"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "q": "What is 26 + 42?",
+    "choices": [
+      "68",
+      "70",
+      "66",
+      "63",
+      "73"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "q": "Which metal\u2019s ore is bauxite?",
+    "choices": [
+      "Copper",
+      "Iron",
+      "Aluminum",
+      "Tin",
+      "Zinc"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Who composed the Four Seasons?",
+    "choices": [
+      "Mozart",
+      "Beethoven",
+      "Vivaldi",
+      "Bach",
+      "Haydn"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which desert is the largest hot desert?",
+    "choices": [
+      "Gobi",
+      "Sahara",
+      "Kalahari",
+      "Arabian",
+      "Atacama"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "What is the chemical formula for table salt?",
+    "choices": [
+      "NaCl",
+      "KCl",
+      "CaCO3",
+      "Na2SO4",
+      "H2SO4"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
+  },
+  {
+    "q": "The Pascal is a unit of:",
+    "choices": [
+      "Force",
+      "Pressure",
+      "Energy",
+      "Power",
+      "Charge"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which country uses the won?",
+    "choices": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Thailand",
+      "Vietnam"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "What is 12 \u00d7 9?",
+    "choices": [
+      "96",
+      "99",
+      "108",
+      "112",
+      "118"
+    ],
+    "answerIndex": 2,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "choices": [
+      "Liver",
+      "Pancreas",
+      "Kidney",
+      "Spleen",
+      "Gallbladder"
+    ],
+    "answerIndex": 1,
+    "difficulty": "mid"
+  },
+  {
+    "q": "Which river runs through Paris?",
+    "choices": [
+      "Seine",
+      "Thames",
+      "Rhine",
+      "Danube",
+      "Elbe"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
+  },
+  {
+    "q": "What part of the eye controls light entry?",
+    "choices": [
+      "Iris",
+      "Cornea",
+      "Retina",
+      "Lens",
+      "Pupil"
+    ],
+    "answerIndex": 0,
+    "difficulty": "mid"
   }
 ]

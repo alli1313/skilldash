@@ -1,12 +1,12 @@
-/* Option B — Light retro pastel skin (no navy), mobile-first */
+/* Option B — App-like skin, tighter mobile spacing */
 :root{
   --cream: #fffaf2;
   --paper: #ffffff;
   --ink: #1e1a2b;
   --muted: #6a6a82;
-  --accent1: #ff6db2;  /* pink */
-  --accent2: #6b8cff;  /* periwinkle */
-  --accent3: #37e6c2;  /* teal */
+  --accent1: #ff6db2;
+  --accent2: #6b8cff;
+  --accent3: #37e6c2;
   --line: #e9e6ff;
   --shadow: 0 10px 24px rgba(0,0,0,.08);
 }
@@ -15,98 +15,108 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background:
-    linear-gradient(180deg, #fffdf7, var(--cream));
+  font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #fffdf7, var(--cream));
   color: var(--ink);
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
 }
 
-.container{width:min(760px,92vw); margin-inline:auto}
+.container{width:min(720px,92vw); margin-inline:auto}
 
 .site-header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.7); backdrop-filter: blur(10px); border-bottom:1px solid var(--line)}
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:10px 0}
 .brand{display:flex; align-items:center; gap:10px}
-.logo{width:28px; height:28px}
-.brand-name{font-family: Syne, Inter, sans-serif; font-weight:800; letter-spacing:.3px}
+.logo{width:26px; height:26px}
+.brand-name{font-family: 'Syne', 'DM Sans', sans-serif; font-weight:800; letter-spacing:.2px}
 
 .nav .link, .nav .link-btn{
   color:#3b3b60; text-decoration:none; background:#fff; border:1px solid var(--line);
-  padding:8px 12px; border-radius:10px; min-height:40px; font-weight:600; box-shadow:var(--shadow);
+  padding:8px 12px; border-radius:12px; min-height:38px; font-weight:700; box-shadow:var(--shadow);
 }
 
-.hero{padding:28px 0 10px}
+.hero{padding:18px 0 6px}
 .hero-card{
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 20px 16px;
+  border-radius: 18px;
+  padding: 18px 14px;
   text-align:center;
   box-shadow: var(--shadow);
 }
 .sticker{
   display:inline-block; background:linear-gradient(90deg,var(--accent2),var(--accent1)); color:white;
-  font-weight:900; letter-spacing:.4px; padding:6px 10px; border-radius:12px; font-size:12px;
+  font-family: 'Syne', 'DM Sans', sans-serif;
+  font-weight:800; letter-spacing:.4px; padding:6px 10px; border-radius:12px; font-size:12px;
 }
-.hero-card h1{ font-family: Syne, Inter, sans-serif; font-weight:800; margin:.6em 0 .3em; font-size: clamp(22px, 6vw, 32px); }
+.hero-card h1{ font-family: 'Syne', 'DM Sans', sans-serif; font-weight:800; margin:.5em 0 .2em; font-size: clamp(22px, 6vw, 30px); line-height:1.1 }
 .hero-card .sub{ color: var(--muted); margin-top:4px }
 
-.cta-row{display:flex; gap:10px; justify-content:center; margin-top:12px}
+.cta-row{display:flex; gap:10px; justify-content:center; margin-top:10px}
 .cta-btn, .ghost-btn, .link-btn{
-  min-height:48px; padding:12px 16px; border-radius:12px; font-weight:800; text-decoration:none; border:none;
+  min-height:46px; padding:12px 16px; border-radius:14px; font-weight:800; text-decoration:none; border:none;
   display:inline-flex; align-items:center; justify-content:center; cursor:pointer;
 }
 .cta-btn{background:linear-gradient(90deg,var(--accent2),var(--accent1)); color:white; box-shadow:var(--shadow)}
 .ghost-btn{background:#fff; border:1px solid var(--line); color:#3b3b60; box-shadow:var(--shadow)}
 
-.badges{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:12px}
+.badges{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:10px}
 .badge{border:1px solid var(--line); padding:6px 10px; border-radius:999px; font-size:12px; color:#494963; background:#fff; box-shadow:var(--shadow)}
 
-.balances{display:flex; gap:16px; justify-content:center; margin-top:12px; color:#555}
+.balances{display:flex; gap:16px; justify-content:center; margin-top:10px; color:#555}
 .balances strong{font-weight:900}
 
 .ver{color:#9090a8; margin-top:8px; font-size:12px}
 
-.faq{padding:16px 0 40px}
-.howto{background:#fff; border:1px solid var(--line); border-radius:16px; padding:12px 16px; box-shadow:var(--shadow)}
+.faq{padding:12px 0 28px}
+.howto{background:#fff; border:1px solid var(--line); border-radius:14px; padding:10px 14px; box-shadow:var(--shadow)}
 .howto li{margin:6px 0}
 
 .view[hidden]{display:none}
 
-.titlebar{display:flex; justify-content:space-between; align-items:center; margin:12px 0 8px}
+.titlebar{display:flex; justify-content:space-between; align-items:center; margin:10px 0 8px}
 .tb-left{display:flex; align-items:center; gap:8px}
 .tiny{width:20px; height:20px}
-.tb-right{display:flex; gap:8px; align-items:center}
+.tb-right{display:flex; gap:8px; align-items:center; font-weight:700; }
 .chip{background:#fff; border:1px solid var(--line); color:#3b3b60; padding:6px 10px; border-radius:999px; font-size:12px; box-shadow:var(--shadow)}
-.timer{font-family: 'Syne', Inter, sans-serif; letter-spacing:1px; font-weight:800}
+
+.timer{position:relative; display:inline-flex; align-items:center; gap:6px}
+.radial{
+  --p:100;
+  width:22px; height:22px; border-radius:50%;
+  background: conic-gradient(var(--accent2) calc(var(--p)*1%), #eee 0);
+}
+.timer #timer{font-family:'Syne','DM Sans',sans-serif}
 
 .status-row{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
-.progress{height:10px; background:#fff; border:1px solid var(--line); border-radius:999px; overflow:hidden; margin:10px 0 14px; box-shadow:var(--shadow)}
+.progress{height:10px; background:#fff; border:1px solid var(--line); border-radius:999px; overflow:hidden; margin:8px 0 12px; box-shadow:var(--shadow)}
 #progressBar{height:100%; width:0%; background:linear-gradient(90deg,var(--accent3),var(--accent1))}
 
-.card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:14px; box-shadow:var(--shadow)}
-.question{font-weight:900; font-size:20px}
+.card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px; box-shadow:var(--shadow)}
+.question{font-weight:800; font-size:20px; font-family: 'Syne','DM Sans',sans-serif}
 .options{display:grid; gap:10px; margin-top:10px}
 .option-btn{
-  background:#ffffff; border:1px solid var(--line); color:#1a1a2b; border-radius:12px; padding:14px; text-align:left; font-weight:600; min-height:52px;
+  background:#ffffff; border:1px solid var(--line); color:#1a1a2b; border-radius:12px; padding:14px; text-align:left; font-weight:700; min-height:52px;
   box-shadow: inset 0 -2px 0 #f5f5ff, var(--shadow);
+  transition: transform .12s ease, box-shadow .12s ease;
 }
+.option-btn:active{ transform: scale(.98) }
 .option-btn[aria-pressed="true"]{outline:3px solid #8ea4ff}
 .option-btn.correct{border-color:#30d9b9; background:#edfffb}
 .option-btn.incorrect{border-color:#ff95c4; background:#fff0f7}
 
-.game-actions{display:flex; justify-content:flex-end; margin-top:10px}
+.game-actions{display:flex; justify-content:flex-end; margin-top:8px}
 
-.result{padding:24px 0 60px; text-align:center}
+.result{padding:20px 0 50px; text-align:center}
 .note{color:#8d8da8}
 
 .dialog::backdrop{background:rgba(0,0,0,.35)}
-.dialog{max-width:720px; width:92vw; border:1px solid var(--line); border-radius:16px; padding:16px; background:#fff; color:#1c1c2c; box-shadow:var(--shadow)}
+.dialog{max-width:720px; width:92vw; border:1px solid var(--line); border-radius:14px; padding:14px; background:#fff; color:#1c1c2c; box-shadow:var(--shadow)}
 .rules{padding-left:18px}
 .dialog-actions{display:flex; justify-content:flex-end; margin-top:10px}
 .topups{display:flex; gap:10px; margin-top:10px}
 .topup{padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:white; font-weight:700; box-shadow:var(--shadow)}
 
-@media (min-width: 920px){
-  .container{width:min(1000px, 92vw)}
-  .hero{padding:42px 0 16px}
-}
+#confetti{position:fixed; inset:0; pointer-events:none}
+.confetti{position:absolute; width:10px; height:10px; border-radius:2px; opacity:.9; animation: fall 900ms ease forwards}
+@keyframes fall{ to{ transform: translateY(40vh) rotate(240deg); opacity:0 } }

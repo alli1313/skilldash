@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>SkillDash — Play Skill Trivia</title>
+  <link rel="manifest" href="manifest.json?v=v3.2-appskin">
+  <meta name="theme-color" content="#fffaf2">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=v3.0-optionB" />
-  <meta name="theme-color" content="#fffaf2">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=v3.2-appskin" />
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -36,20 +38,16 @@
             <a class="cta-btn" id="playBtn" href="#">PLAY FREE</a>
             <button class="ghost-btn" id="manageWallet">Manage Wallet</button>
           </div>
-
           <div class="badges">
             <span class="badge">Mobile‑first</span>
             <span class="badge">No RNG</span>
             <span class="badge">One free play daily</span>
           </div>
-
           <div class="balances">
             <div>Wallet: <strong id="walletBal">$0.00</strong></div>
-            <div>Winnings: <strong id="winBal">$0.00</strong></div>
-            <div>Today’s entries: <strong id="entriesToday">0</strong></div>
+            <div>Plays left today: <strong id="playsLeft">0</strong></div>
           </div>
-
-          <div class="ver">Build v3.0‑optionB</div>
+          <div class="ver">Build v3.2-appskin</div>
         </div>
       </div>
     </section>
@@ -60,7 +58,7 @@
         <li>Answer 10 questions. Rounds 1–5 pay <strong>$1</strong> per correct answer.</li>
         <li>Rounds 6–10 pay <strong>$5</strong> per correct answer.</li>
         <li>Beat both tiers to face the final for <strong>$100</strong> (one shot).</li>
-        <li>Missed one? Continue using winnings or wallet. Costs escalate by tier.</li>
+        <li>Missed one? Continue using your <strong>Wallet</strong>. Costs escalate by tier.</li>
         <li>First game each day is free. Later games today: $1 → $5 → $10 → $20.</li>
       </ol>
     </section>
@@ -76,15 +74,17 @@
         </div>
         <div class="tb-right">
           <span class="chip" id="roundInfo">Q 1/11</span>
-          <span class="chip">Target: 8/10</span>
-          <span class="timer chip"><span id="timer">00:05</span></span>
+          <span class="chip" id="tierChip">Tier 1 ($1/Q)</span>
+          <span class="chip timer">
+            <span id="timerCircle" class="radial" style="--p:100"></span>
+            <span id="timer">5</span>
+          </span>
         </div>
       </div>
 
       <div class="status-row">
-        <span class="chip" id="tierChip">Tier 1 ($1/Q)</span>
         <span class="chip">Wallet: <span id="walletBalGame">$0.00</span></span>
-        <span class="chip">Winnings: <span id="winBalGame">$0.00</span></span>
+        <span class="chip">Plays left today: <span id="playsLeftGame">0</span></span>
       </div>
 
       <div class="progress"><div id="progressBar"></div></div>
@@ -99,6 +99,15 @@
       </div>
     </section>
   </main>
+
+  <!-- ROUND BREAK OVERLAYS -->
+  <dialog id="roundBreak" class="dialog">
+    <form method="dialog">
+      <h3 id="rbTitle">Great job!</h3>
+      <p id="rbBody">You cleared Tier 1. Next up: Tier 2 — $5 per correct and tougher questions.</p>
+      <div class="dialog-actions"><button class="cta-btn">Continue</button></div>
+    </form>
+  </dialog>
 
   <!-- RESULT VIEW -->
   <main id="view-result" class="view" hidden aria-labelledby="result-title">
@@ -123,7 +132,7 @@
         <li>One free entry per day; additional entries require wallet funds.</li>
         <li>Payouts: R1–5 $1 each, R6–10 $5 each, Final $100 (one shot).</li>
         <li>Continue costs: Tier1 ($1, $2, $5 then out). Tier2 ($5, $10, $15 then out).</li>
-        <li>Wallet top‑ups in $10+ increments. Winnings can be used for continues.</li>
+        <li>Wallet top‑ups in $10+ increments.</li>
         <li>No jackpot replays. Winners subject to verification.</li>
       </ul>
       <div class="dialog-actions"><button class="cta-btn">Close</button></div>
@@ -136,7 +145,7 @@
       <p>Use your wallet for entries and continues. Top up in $10 increments.</p>
       <div class="wallet-balances">
         <div>Wallet: <strong id="walletBalD">$0.00</strong></div>
-        <div>Winnings: <strong id="winBalD">$0.00</strong></div>
+        <div>Plays left today: <strong id="playsLeftD">0</strong></div>
       </div>
       <div class="topups">
         <button class="topup" data-amt="10" value="close">$10 Top‑Up</button>
@@ -148,6 +157,9 @@
     </form>
   </dialog>
 
-  <script type="module" src="app.js?v=v3.0-optionB"></script>
+  <div id="confetti"></div>
+
+  <script type="module" src="app.js?v=v3.2-appskin"></script>
+  <script>if('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js?v=v3.2-appskin'); }</script>
 </body>
 </html>
